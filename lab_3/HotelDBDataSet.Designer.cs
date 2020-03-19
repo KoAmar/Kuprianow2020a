@@ -905,8 +905,10 @@ namespace lab_3.HotelDBDataSetTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_LanguageId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "LanguageId", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Clients] ([Name], [Surname], [Patronymic], [DiscountPercentage], [LanguageId]) VALUES (@Name, @Surname, @Patronymic, @DiscountPercentage, @LanguageId);
-SELECT Id, Name, Surname, Patronymic, DiscountPercentage, LanguageId FROM Clients WHERE (Id = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = @"
+                      INSERT INTO [dbo].[Clients] ([Name], [Surname], [Patronymic], [DiscountPercentage], [LanguageId]) VALUES (@Name, @Surname, @Patronymic, @DiscountPercentage, @LanguageId);
+                      SELECT Id, Name, Surname, Patronymic, DiscountPercentage, LanguageId FROM Clients WHERE (Id = SCOPE_IDENTITY())
+                    ";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Surname", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Surname", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -915,8 +917,10 @@ SELECT Id, Name, Surname, Patronymic, DiscountPercentage, LanguageId FROM Client
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@LanguageId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "LanguageId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Clients] SET [Name] = @Name, [Surname] = @Surname, [Patronymic] = @Patronymic, [DiscountPercentage] = @DiscountPercentage, [LanguageId] = @LanguageId WHERE (([Id] = @Original_Id) AND ([Name] = @Original_Name) AND ([Surname] = @Original_Surname) AND ((@IsNull_Patronymic = 1 AND [Patronymic] IS NULL) OR ([Patronymic] = @Original_Patronymic)) AND ((@IsNull_DiscountPercentage = 1 AND [DiscountPercentage] IS NULL) OR ([DiscountPercentage] = @Original_DiscountPercentage)) AND ([LanguageId] = @Original_LanguageId));
-SELECT Id, Name, Surname, Patronymic, DiscountPercentage, LanguageId FROM Clients WHERE (Id = @Id)";
+            this._adapter.UpdateCommand.CommandText = @"
+                      UPDATE [dbo].[Clients] SET [Name] = @Name, [Surname] = @Surname, [Patronymic] = @Patronymic, [DiscountPercentage] = @DiscountPercentage, [LanguageId] = @LanguageId WHERE (([Id] = @Original_Id) AND ([Name] = @Original_Name) AND ([Surname] = @Original_Surname) AND ((@IsNull_Patronymic = 1 AND [Patronymic] IS NULL) OR ([Patronymic] = @Original_Patronymic)) AND ((@IsNull_DiscountPercentage = 1 AND [DiscountPercentage] IS NULL) OR ([DiscountPercentage] = @Original_DiscountPercentage)) AND ([LanguageId] = @Original_LanguageId));
+                      SELECT Id, Name, Surname, Patronymic, DiscountPercentage, LanguageId FROM Clients WHERE (Id = @Id)
+                    ";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Surname", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Surname", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));

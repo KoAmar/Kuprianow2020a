@@ -16,6 +16,7 @@ namespace lab_2
         {
             InitializeComponent();
         }
+
         private void btRead_Click(object sender, EventArgs e)
         {
             // Создание строки подключения
@@ -43,9 +44,9 @@ namespace lab_2
                              $"{reader.GetValue(5)}";
                 listBox1.Items.Add(result);
             }
+
             // Закрытие DataReader
             reader.Close();
-
         }
 
         private void btClean_Click(object sender, EventArgs e)
@@ -60,18 +61,17 @@ namespace lab_2
             var command = new SqlCommand("SELECT COUNT (*) FROM Clients", con);
             con.Open();
             // Получить значение COUNT
-            var countResult = (int)command.ExecuteScalar();
+            var countResult = (int) command.ExecuteScalar();
 
             label1.Text = @"Общее число клиентов: " + countResult;
             con.Close();
-
         }
 
         private void btAdd_Click(object sender, EventArgs e)
         {
             var con = new SqlConnection(ConnectionString);
 
-            var cmd = new SqlCommand("InsertClients", con) { CommandType = CommandType.StoredProcedure };
+            var cmd = new SqlCommand("InsertClients", con) {CommandType = CommandType.StoredProcedure};
 
             // Указать параметры
             cmd.Parameters.AddWithValue("@Name", IsNullOrEmpty(textBox1.Text) ? "Default" : textBox1.Text);
@@ -86,7 +86,7 @@ namespace lab_2
                 label2.Text = @"ExecuteNonQuery result: " + numAff;
 
                 // Получить вновь сгенерированный идентификатор
-                var id = (int)cmd.Parameters["@ClientId"].Value;
+                var id = (int) cmd.Parameters["@ClientId"].Value;
                 label3.Text = @"Новому сотруднику присвоен ID: " + id;
             }
             finally
@@ -96,4 +96,3 @@ namespace lab_2
         }
     }
 }
-

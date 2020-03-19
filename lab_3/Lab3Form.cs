@@ -21,7 +21,6 @@ namespace lab_3
 
         private void btFill_Click(object sender, EventArgs e)
         {
-
             var con = new SqlConnection(ConnectionString);
             const string command = "SELECT * FROM Clients";
             var adapter = new SqlDataAdapter(command, con);
@@ -42,7 +41,6 @@ namespace lab_3
                              $"[{row[5]}]";
                 listBox1.Items.Add(result);
             }
-
         }
 
         private void btProgramFill_Click(object sender, EventArgs e)
@@ -73,7 +71,7 @@ namespace lab_3
             clientsTable.Columns.Add(surnameColumn);
             clientsTable.Columns.Add(discountColumn);
 
-            clientsTable.PrimaryKey = new[] { clientsTable.Columns["Id"] };
+            clientsTable.PrimaryKey = new[] {clientsTable.Columns["Id"]};
 
             clientsTable.Rows.Add(null, "Накормите", "Студента", 25);
             clientsTable.Rows.Add(null, "Хотя", "Бы", 50);
@@ -82,10 +80,9 @@ namespace lab_3
             foreach (DataRow row in clientsTable.Rows)
             {
                 var result = row.ItemArray
-                    .Aggregate((current, cell) => current + ($" [{cell}] "));
+                    .Aggregate((current, cell) => current + $" [{cell}] ");
                 listBox2.Items.Add(result);
             }
-
         }
 
 

@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace lab_3
 {
-    class ListTextTable
+    internal class ListTextTable
     {
-        private readonly int _tableWidth;
         private readonly ListBox _listBox;
+        private readonly int _tableWidth;
 
         public ListTextTable(int tableWidth, ref ListBox listBox)
         {
@@ -25,13 +20,10 @@ namespace lab_3
 
         internal void PrintRow(params string[] columns)
         {
-            int width = (_tableWidth - columns.Length) / columns.Length;
-            string row = "|";
+            var width = (_tableWidth - columns.Length) / columns.Length;
+            var row = "|";
 
-            foreach (string column in columns)
-            {
-                row += AlignCentre(column, width) + "|";
-            }
+            foreach (var column in columns) row += AlignCentre(column, width) + "|";
 
             _listBox.Items.Add(row);
         }
@@ -40,10 +32,7 @@ namespace lab_3
         {
             text = text.Length > width ? text.Substring(0, width - 3) + "..." : text;
 
-            if (string.IsNullOrEmpty(text))
-            {
-                return new string(' ', width);
-            }
+            if (string.IsNullOrEmpty(text)) return new string(' ', width);
 
             return text.PadRight(width - (width - text.Length) / 2).PadLeft(width);
         }

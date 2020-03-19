@@ -37,6 +37,16 @@
             this.btProgramFill = new System.Windows.Forms.Button();
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tbDiscount = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.tbPatronymic = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.tbSurname = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tbName = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,24 +58,14 @@
             this.clientsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.hotelDBDataSet = new lab_3.HotelDBDataSet();
             this.clientsTableAdapter = new lab_3.HotelDBDataSetTableAdapters.ClientsTableAdapter();
-            this.button2 = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tbName = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tbSurname = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.tbPatronymic = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.tbDiscount = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hotelDBDataSet)).BeginInit();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btFill
@@ -162,6 +162,101 @@
             this.tabPage3.Text = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.tbDiscount);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.tbPatronymic);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.tbSurname);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.tbName);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Location = new System.Drawing.Point(745, 3);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(505, 541);
+            this.groupBox1.TabIndex = 3;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Client fields";
+            // 
+            // tbDiscount
+            // 
+            this.tbDiscount.Location = new System.Drawing.Point(9, 149);
+            this.tbDiscount.Name = "tbDiscount";
+            this.tbDiscount.Size = new System.Drawing.Size(490, 20);
+            this.tbDiscount.TabIndex = 7;
+            this.tbDiscount.Text = "99";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 133);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(44, 13);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Скидка";
+            // 
+            // tbPatronymic
+            // 
+            this.tbPatronymic.Location = new System.Drawing.Point(9, 110);
+            this.tbPatronymic.Name = "tbPatronymic";
+            this.tbPatronymic.Size = new System.Drawing.Size(490, 20);
+            this.tbPatronymic.TabIndex = 5;
+            this.tbPatronymic.Text = "Молодец";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 94);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(54, 13);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Отчество";
+            // 
+            // tbSurname
+            // 
+            this.tbSurname.Location = new System.Drawing.Point(9, 71);
+            this.tbSurname.Name = "tbSurname";
+            this.tbSurname.Size = new System.Drawing.Size(490, 20);
+            this.tbSurname.TabIndex = 3;
+            this.tbSurname.Text = "Голованов";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 55);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(56, 13);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Фамилия";
+            // 
+            // tbName
+            // 
+            this.tbName.Location = new System.Drawing.Point(9, 32);
+            this.tbName.Name = "tbName";
+            this.tbName.Size = new System.Drawing.Size(490, 20);
+            this.tbName.TabIndex = 1;
+            this.tbName.Text = "Павел";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(29, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Имя";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(1033, 550);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(217, 90);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Add entered client";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.btAddClient_Click);
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(745, 550);
@@ -247,101 +342,6 @@
             // 
             this.clientsTableAdapter.ClearBeforeFill = true;
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(1033, 550);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(217, 90);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Add entered client";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.btAddClient_Click);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.tbDiscount);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.tbPatronymic);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.tbSurname);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.tbName);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(745, 3);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(505, 541);
-            this.groupBox1.TabIndex = 3;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Client fields";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Имя";
-            // 
-            // tbName
-            // 
-            this.tbName.Location = new System.Drawing.Point(9, 32);
-            this.tbName.Name = "tbName";
-            this.tbName.Size = new System.Drawing.Size(490, 20);
-            this.tbName.TabIndex = 1;
-            this.tbName.Text = "Павел";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 55);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Фамилия";
-            // 
-            // tbSurname
-            // 
-            this.tbSurname.Location = new System.Drawing.Point(9, 71);
-            this.tbSurname.Name = "tbSurname";
-            this.tbSurname.Size = new System.Drawing.Size(490, 20);
-            this.tbSurname.TabIndex = 3;
-            this.tbSurname.Text = "Голованов";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 94);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Отчество";
-            // 
-            // tbPatronymic
-            // 
-            this.tbPatronymic.Location = new System.Drawing.Point(9, 110);
-            this.tbPatronymic.Name = "tbPatronymic";
-            this.tbPatronymic.Size = new System.Drawing.Size(490, 20);
-            this.tbPatronymic.TabIndex = 5;
-            this.tbPatronymic.Text = "Молодец";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 133);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 13);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Скидка";
-            // 
-            // tbDiscount
-            // 
-            this.tbDiscount.Location = new System.Drawing.Point(9, 149);
-            this.tbDiscount.Name = "tbDiscount";
-            this.tbDiscount.Size = new System.Drawing.Size(490, 20);
-            this.tbDiscount.TabIndex = 7;
-            this.tbDiscount.Text = "99";
-            // 
             // Lab3Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -349,16 +349,16 @@
             this.ClientSize = new System.Drawing.Size(1261, 669);
             this.Controls.Add(this.tabControl1);
             this.Name = "Lab3Form";
-            this.Text = "lab4 golovanov pa";
+            this.Text = "lab3 golovanov pa";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hotelDBDataSet)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
