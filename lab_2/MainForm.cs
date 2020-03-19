@@ -2,6 +2,7 @@
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using static System.String;
 
 namespace lab_2
 {
@@ -33,7 +34,13 @@ namespace lab_2
             // Проход в цикле по записям 
             while (reader.Read())
             {
-                var result = reader.GetValue(0) + " " + reader.GetValue(1) + " " + reader.GetValue(2) + " " + reader.GetValue(3);
+                var result = "" +
+                             $"{reader.GetValue(0),4} " +
+                             $"{reader.GetValue(1),20} " +
+                             $"{reader.GetValue(2),20} " +
+                             $"{reader.GetValue(3),20} " +
+                             $"{reader.GetValue(4),3} " +
+                             $"{reader.GetValue(5)}";
                 listBox1.Items.Add(result);
             }
             // Закрытие DataReader
@@ -64,12 +71,11 @@ namespace lab_2
         {
             var con = new SqlConnection(ConnectionString);
 
-            // Создать команду для вызова хранимой процедуры InsertEmployee
             var cmd = new SqlCommand("InsertClients", con) { CommandType = CommandType.StoredProcedure };
 
             // Указать параметры
-            cmd.Parameters.AddWithValue("@Name", "Vasia");
-            cmd.Parameters.AddWithValue("@Surname", "Svistunov");
+            cmd.Parameters.AddWithValue("@Name", IsNullOrEmpty(textBox1.Text) ? "Default" : textBox1.Text);
+            cmd.Parameters.AddWithValue("@Surname", IsNullOrEmpty(textBox1.Text) ? "Client" : textBox2.Text);
             // Последний параметр является выходным (output)
             cmd.Parameters.Add(new SqlParameter("@ClientId", SqlDbType.Int));
             cmd.Parameters["@ClientId"].Direction = ParameterDirection.Output;
