@@ -26,8 +26,8 @@ namespace lab_3
             var adapter = new SqlDataAdapter(command, con);
 
             var dataSet = new DataSet();
-            adapter.Fill(dataSet, "Clients");
 
+            adapter.Fill(dataSet, "Clients");
             listBox1.Items.Clear();
 
             foreach (DataRow row in dataSet.Tables["Clients"].Rows)

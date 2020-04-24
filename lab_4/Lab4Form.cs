@@ -49,11 +49,11 @@ namespace lab_4
             var item1 = listBox1.SelectedItem;
             var item2 = listBox2.SelectedItem;
 
-            if (item1 != null) { rowFilter += $"({item1})"; }
+            if (item1 != null) rowFilter += $"({item1})";
 
             if (item2 != null)
             {
-                if (item1 != null) { rowFilter += " and "; }
+                if (item1 != null) rowFilter += " and ";
                 rowFilter += $"({item2})";
             }
 
