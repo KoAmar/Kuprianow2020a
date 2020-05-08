@@ -19,26 +19,26 @@ namespace lab_6
 
         private void AdminsBt_Click(object sender, EventArgs e)
         {
-            //var form = new AdminsForm();
-            //form.ShowDialog(this);
+            var form = new Admins();
+            form.ShowDialog(this);
         }
 
         private void ClientsBt_Click(object sender, EventArgs e)
         {
-            //var form = new Clients();
-            //form.ShowDialog(this);
+            var form = new Clients();
+            form.ShowDialog(this);
         }
 
         private void RoomsBt_Click(object sender, EventArgs e)
         {
-            //var form = new RoomsForm();
-            //form.ShowDialog(this);
+            var form = new Rooms();
+            form.ShowDialog(this);
         }
 
         private void LangBt_Click(object sender, EventArgs e)
         {
-            //var form = new LangForm();
-            //form.ShowDialog(this);
+            var form = new Language();
+            form.ShowDialog(this);
         }
     }
 }

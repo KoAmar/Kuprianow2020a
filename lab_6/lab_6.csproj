@@ -46,11 +46,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\Admins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Admins.Designer.cs">
+      <DependentUpon>Admins.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Audit.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Audit.Designer.cs">
       <DependentUpon>Audit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Clients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Clients.Designer.cs">
+      <DependentUpon>Clients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Language.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Language.Designer.cs">
+      <DependentUpon>Language.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Rooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Rooms.Designer.cs">
+      <DependentUpon>Rooms.cs</DependentUpon>
     </Compile>
     <Compile Include="HotelDBDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -65,8 +89,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Admins.resx">
+      <DependentUpon>Admins.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Audit.resx">
       <DependentUpon>Audit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Clients.resx">
+      <DependentUpon>Clients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Language.resx">
+      <DependentUpon>Language.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Rooms.resx">
+      <DependentUpon>Rooms.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
