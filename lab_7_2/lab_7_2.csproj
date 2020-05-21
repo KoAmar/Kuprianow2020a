@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C6C0E173-C458-479F-9541-3C779FAD7667}</ProjectGuid>
+    <ProjectGuid>{9B29B9E8-1C6A-4F6A-9285-EF7D0CA806C6}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>lab_6</RootNamespace>
-    <AssemblyName>lab_6</AssemblyName>
+    <RootNamespace>lab_7_2</RootNamespace>
+    <AssemblyName>lab_7_2</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,35 +46,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\Admins.cs">
+    <Compile Include="Editors\AdminsEditor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Admins.Designer.cs">
-      <DependentUpon>Admins.cs</DependentUpon>
+    <Compile Include="Editors\AdminsEditor.Designer.cs">
+      <DependentUpon>AdminsEditor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Audit.cs">
+    <Compile Include="Editors\AuditEditor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Audit.Designer.cs">
-      <DependentUpon>Audit.cs</DependentUpon>
+    <Compile Include="Editors\AuditEditor.Designer.cs">
+      <DependentUpon>AuditEditor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Clients.cs">
+    <Compile Include="Editors\ClientsEditor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Clients.Designer.cs">
-      <DependentUpon>Clients.cs</DependentUpon>
+    <Compile Include="Editors\ClientsEditor.Designer.cs">
+      <DependentUpon>ClientsEditor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Language.cs">
+    <Compile Include="Editors\LanguageEditor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Language.Designer.cs">
-      <DependentUpon>Language.cs</DependentUpon>
+    <Compile Include="Editors\LanguageEditor.Designer.cs">
+      <DependentUpon>LanguageEditor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Rooms.cs">
+    <Compile Include="Editors\RoomsEditor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Rooms.Designer.cs">
-      <DependentUpon>Rooms.cs</DependentUpon>
+    <Compile Include="Editors\RoomsEditor.Designer.cs">
+      <DependentUpon>RoomsEditor.cs</DependentUpon>
     </Compile>
     <Compile Include="HotelDBDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -89,20 +89,50 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\Admins.resx">
+    <Compile Include="Tables\Admins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tables\Admins.Designer.cs">
       <DependentUpon>Admins.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Audit.resx">
+    </Compile>
+    <Compile Include="Tables\Audit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tables\Audit.Designer.cs">
       <DependentUpon>Audit.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Clients.resx">
+    </Compile>
+    <Compile Include="Tables\Clients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tables\Clients.Designer.cs">
       <DependentUpon>Clients.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Language.resx">
+    </Compile>
+    <Compile Include="Tables\Language.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tables\Language.Designer.cs">
       <DependentUpon>Language.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Rooms.resx">
+    </Compile>
+    <Compile Include="Tables\Rooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tables\Rooms.Designer.cs">
       <DependentUpon>Rooms.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Editors\AdminsEditor.resx">
+      <DependentUpon>AdminsEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\AuditEditor.resx">
+      <DependentUpon>AuditEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\ClientsEditor.resx">
+      <DependentUpon>ClientsEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\LanguageEditor.resx">
+      <DependentUpon>LanguageEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\RoomsEditor.resx">
+      <DependentUpon>RoomsEditor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
@@ -116,6 +146,21 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Tables\Admins.resx">
+      <DependentUpon>Admins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tables\Audit.resx">
+      <DependentUpon>Audit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tables\Clients.resx">
+      <DependentUpon>Clients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tables\Language.resx">
+      <DependentUpon>Language.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tables\Rooms.resx">
+      <DependentUpon>Rooms.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="HotelDBDataSet.xsc">
       <DependentUpon>HotelDBDataSet.xsd</DependentUpon>
     </None>
@@ -127,6 +172,7 @@
     <None Include="HotelDBDataSet.xss">
       <DependentUpon>HotelDBDataSet.xsd</DependentUpon>
     </None>
+    <None Include="Properties\DataSources\lab_7_2.Tables.Language.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
