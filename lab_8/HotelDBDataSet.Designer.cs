@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace lab_7_2 {
+namespace lab_8 {
     
     
     /// <summary>
@@ -2748,7 +2748,7 @@ namespace lab_7_2 {
         }
     }
 }
-namespace lab_7_2.HotelDBDataSetTableAdapters {
+namespace lab_8.HotelDBDataSetTableAdapters {
     
     
     /// <summary>
@@ -2917,7 +2917,7 @@ SELECT Id, Name, Surname, Patronymic FROM Administrators WHERE (Id = @Id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::lab_7_2.Properties.Settings.Default.HotelDBConnectionString;
+            this._connection.ConnectionString = global::lab_8.Properties.Settings.Default.HotelDBConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3321,7 +3321,7 @@ SELECT Id, AdministratorId, ArrivalDate, DepartureDate, PaymentTime, ClientId, R
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::lab_7_2.Properties.Settings.Default.HotelDBConnectionString;
+            this._connection.ConnectionString = global::lab_8.Properties.Settings.Default.HotelDBConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3754,7 +3754,7 @@ SELECT Id, Name, Surname, Patronymic, DiscountPercentage, LanguageId FROM Client
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::lab_7_2.Properties.Settings.Default.HotelDBConnectionString;
+            this._connection.ConnectionString = global::lab_8.Properties.Settings.Default.HotelDBConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4156,7 +4156,7 @@ SELECT Id, Name, Surname, Patronymic, DiscountPercentage, LanguageId FROM Client
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::lab_7_2.Properties.Settings.Default.HotelDBConnectionString;
+            this._connection.ConnectionString = global::lab_8.Properties.Settings.Default.HotelDBConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4485,7 +4485,7 @@ SELECT Id, Number, NumberOfBeds, CostOfNight FROM Rooms WHERE (Id = @Id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::lab_7_2.Properties.Settings.Default.HotelDBConnectionString;
+            this._connection.ConnectionString = global::lab_8.Properties.Settings.Default.HotelDBConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

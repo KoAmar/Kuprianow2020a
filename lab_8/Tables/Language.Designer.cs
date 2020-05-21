@@ -1,4 +1,6 @@
-﻿namespace lab_7_2.Tables
+﻿using lab_8.HotelDBDataSetTableAdapters;
+
+namespace lab_8.Tables
 {
     partial class Language
     {
@@ -30,10 +32,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Language));
-            this.hotelDBDataSet = new lab_7_2.HotelDBDataSet();
+            this.hotelDBDataSet = new HotelDBDataSet();
             this.languagesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.languagesTableAdapter = new lab_7_2.HotelDBDataSetTableAdapters.LanguagesTableAdapter();
-            this.tableAdapterManager = new lab_7_2.HotelDBDataSetTableAdapters.TableAdapterManager();
+            this.languagesTableAdapter = new LanguagesTableAdapter();
+            this.tableAdapterManager = new TableAdapterManager();
             this.languagesBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
@@ -79,7 +81,7 @@
             this.tableAdapterManager.ClientsTableAdapter = null;
             this.tableAdapterManager.LanguagesTableAdapter = this.languagesTableAdapter;
             this.tableAdapterManager.RoomsTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = lab_7_2.HotelDBDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // languagesBindingNavigator
             // 

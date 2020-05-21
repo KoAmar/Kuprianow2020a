@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Windows.Forms;
-using lab_7_2.Editors;
-using lab_7_2.Tables;
+using lab_8.Editors;
+using lab_8.Tables;
 
-namespace lab_7_2
+namespace lab_8
 {
     public partial class Menu : Form
     {

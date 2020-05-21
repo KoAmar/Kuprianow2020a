@@ -1,4 +1,6 @@
-﻿namespace lab_7_2.Tables
+﻿using lab_8.HotelDBDataSetTableAdapters;
+
+namespace lab_8.Tables
 {
     partial class Clients
     {
@@ -30,11 +32,11 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Clients));
-            this.hotelDBDataSet = new lab_7_2.HotelDBDataSet();
+            this.hotelDBDataSet = new HotelDBDataSet();
             this.clientsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.clientsTableAdapter = new lab_7_2.HotelDBDataSetTableAdapters.ClientsTableAdapter();
-            this.tableAdapterManager = new lab_7_2.HotelDBDataSetTableAdapters.TableAdapterManager();
-            this.languagesTableAdapter = new lab_7_2.HotelDBDataSetTableAdapters.LanguagesTableAdapter();
+            this.clientsTableAdapter = new ClientsTableAdapter();
+            this.tableAdapterManager = new TableAdapterManager();
+            this.languagesTableAdapter = new LanguagesTableAdapter();
             this.clientsBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -87,7 +89,7 @@
             this.tableAdapterManager.ClientsTableAdapter = this.clientsTableAdapter;
             this.tableAdapterManager.LanguagesTableAdapter = this.languagesTableAdapter;
             this.tableAdapterManager.RoomsTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = lab_7_2.HotelDBDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // languagesTableAdapter
             // 

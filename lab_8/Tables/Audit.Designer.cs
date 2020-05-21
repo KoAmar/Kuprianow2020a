@@ -1,4 +1,6 @@
-﻿namespace lab_7_2.Tables
+﻿using lab_8.HotelDBDataSetTableAdapters;
+
+namespace lab_8.Tables
 {
     partial class Audit
     {
@@ -30,13 +32,13 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Audit));
-            this.hotelDBDataSet = new lab_7_2.HotelDBDataSet();
+            this.hotelDBDataSet = new HotelDBDataSet();
             this.auditLogBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.auditLogTableAdapter = new lab_7_2.HotelDBDataSetTableAdapters.AuditLogTableAdapter();
-            this.tableAdapterManager = new lab_7_2.HotelDBDataSetTableAdapters.TableAdapterManager();
-            this.administratorsTableAdapter = new lab_7_2.HotelDBDataSetTableAdapters.AdministratorsTableAdapter();
-            this.clientsTableAdapter = new lab_7_2.HotelDBDataSetTableAdapters.ClientsTableAdapter();
-            this.roomsTableAdapter = new lab_7_2.HotelDBDataSetTableAdapters.RoomsTableAdapter();
+            this.auditLogTableAdapter = new AuditLogTableAdapter();
+            this.tableAdapterManager = new TableAdapterManager();
+            this.administratorsTableAdapter = new AdministratorsTableAdapter();
+            this.clientsTableAdapter = new ClientsTableAdapter();
+            this.roomsTableAdapter = new RoomsTableAdapter();
             this.auditLogBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -97,7 +99,7 @@
             this.tableAdapterManager.ClientsTableAdapter = this.clientsTableAdapter;
             this.tableAdapterManager.LanguagesTableAdapter = null;
             this.tableAdapterManager.RoomsTableAdapter = this.roomsTableAdapter;
-            this.tableAdapterManager.UpdateOrder = lab_7_2.HotelDBDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // administratorsTableAdapter
             // 

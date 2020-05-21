@@ -1,14 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace lab_7_2.Editors
+namespace lab_8.Editors
 {
     public partial class RoomsEditor : Form
     {
@@ -19,17 +12,15 @@ namespace lab_7_2.Editors
 
         private void roomsBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
-            this.Validate();
-            this.roomsBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.hotelDBDataSet);
-
+            Validate();
+            roomsBindingSource.EndEdit();
+            tableAdapterManager.UpdateAll(hotelDBDataSet);
         }
 
         private void RoomsEditor_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'hotelDBDataSet.Rooms' table. You can move, or remove it, as needed.
-            this.roomsTableAdapter.Fill(this.hotelDBDataSet.Rooms);
-
+            roomsTableAdapter.Fill(hotelDBDataSet.Rooms);
         }
     }
 }

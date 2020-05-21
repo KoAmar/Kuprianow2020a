@@ -1,4 +1,6 @@
-﻿namespace lab_7_2.Editors
+﻿using lab_8.HotelDBDataSetTableAdapters;
+
+namespace lab_8.Editors
 {
     partial class ClientsEditor
     {
@@ -35,10 +37,10 @@
             System.Windows.Forms.Label patronymicLabel;
             System.Windows.Forms.Label discountPercentageLabel;
             System.Windows.Forms.Label languageIdLabel;
-            this.hotelDBDataSet = new lab_7_2.HotelDBDataSet();
+            this.hotelDBDataSet = new HotelDBDataSet();
             this.clientsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.clientsTableAdapter = new lab_7_2.HotelDBDataSetTableAdapters.ClientsTableAdapter();
-            this.tableAdapterManager = new lab_7_2.HotelDBDataSetTableAdapters.TableAdapterManager();
+            this.clientsTableAdapter = new ClientsTableAdapter();
+            this.tableAdapterManager = new TableAdapterManager();
             this.clientsBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
@@ -58,7 +60,7 @@
             this.discountPercentageTextBox = new System.Windows.Forms.TextBox();
             this.languageIdListBox = new System.Windows.Forms.ListBox();
             this.languagesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.languagesTableAdapter = new lab_7_2.HotelDBDataSetTableAdapters.LanguagesTableAdapter();
+            this.languagesTableAdapter = new LanguagesTableAdapter();
             nameLabel = new System.Windows.Forms.Label();
             surnameLabel = new System.Windows.Forms.Label();
             patronymicLabel = new System.Windows.Forms.Label();
@@ -93,7 +95,7 @@
             this.tableAdapterManager.ClientsTableAdapter = this.clientsTableAdapter;
             this.tableAdapterManager.LanguagesTableAdapter = this.languagesTableAdapter;
             this.tableAdapterManager.RoomsTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = lab_7_2.HotelDBDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // clientsBindingNavigator
             // 

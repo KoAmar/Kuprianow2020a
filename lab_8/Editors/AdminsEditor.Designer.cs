@@ -1,4 +1,6 @@
-﻿namespace lab_7_2.Editors
+﻿using lab_8.HotelDBDataSetTableAdapters;
+
+namespace lab_8.Editors
 {
     partial class AdminsEditor
     {
@@ -33,10 +35,10 @@
             System.Windows.Forms.Label nameLabel;
             System.Windows.Forms.Label surnameLabel;
             System.Windows.Forms.Label patronymicLabel;
-            this.hotelDBDataSet = new lab_7_2.HotelDBDataSet();
+            this.hotelDBDataSet = new HotelDBDataSet();
             this.administratorsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.administratorsTableAdapter = new lab_7_2.HotelDBDataSetTableAdapters.AdministratorsTableAdapter();
-            this.tableAdapterManager = new lab_7_2.HotelDBDataSetTableAdapters.TableAdapterManager();
+            this.administratorsTableAdapter = new AdministratorsTableAdapter();
+            this.tableAdapterManager = new TableAdapterManager();
             this.administratorsBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
@@ -84,7 +86,7 @@
             this.tableAdapterManager.ClientsTableAdapter = null;
             this.tableAdapterManager.LanguagesTableAdapter = null;
             this.tableAdapterManager.RoomsTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = lab_7_2.HotelDBDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // administratorsBindingNavigator
             // 

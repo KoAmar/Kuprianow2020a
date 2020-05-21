@@ -1,4 +1,4 @@
-﻿namespace lab_7_2
+﻿namespace lab_8
 {
     partial class Menu
     {

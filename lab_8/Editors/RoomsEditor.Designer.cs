@@ -1,4 +1,6 @@
-﻿namespace lab_7_2.Editors
+﻿using lab_8.HotelDBDataSetTableAdapters;
+
+namespace lab_8.Editors
 {
     partial class RoomsEditor
     {
@@ -33,10 +35,10 @@
             System.Windows.Forms.Label numberLabel;
             System.Windows.Forms.Label numberOfBedsLabel;
             System.Windows.Forms.Label costOfNightLabel;
-            this.hotelDBDataSet = new lab_7_2.HotelDBDataSet();
+            this.hotelDBDataSet = new HotelDBDataSet();
             this.roomsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.roomsTableAdapter = new lab_7_2.HotelDBDataSetTableAdapters.RoomsTableAdapter();
-            this.tableAdapterManager = new lab_7_2.HotelDBDataSetTableAdapters.TableAdapterManager();
+            this.roomsTableAdapter = new RoomsTableAdapter();
+            this.tableAdapterManager = new TableAdapterManager();
             this.roomsBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
@@ -84,7 +86,7 @@
             this.tableAdapterManager.ClientsTableAdapter = null;
             this.tableAdapterManager.LanguagesTableAdapter = null;
             this.tableAdapterManager.RoomsTableAdapter = this.roomsTableAdapter;
-            this.tableAdapterManager.UpdateOrder = lab_7_2.HotelDBDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // roomsBindingNavigator
             // 
