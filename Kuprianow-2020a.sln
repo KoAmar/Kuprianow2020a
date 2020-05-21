@@ -27,7 +27,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lect_7", "lect_7\lect_7.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_6", "lab_6\lab_6.csproj", "{C6C0E173-C458-479F-9541-3C779FAD7667}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_7_2", "lab_7_2\lab_7_2.csproj", "{9B29B9E8-1C6A-4F6A-9285-EF7D0CA806C6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_8", "lab_8\lab_8.csproj", "{9B29B9E8-1C6A-4F6A-9285-EF7D0CA806C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
