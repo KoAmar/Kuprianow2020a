@@ -47,5 +47,11 @@ namespace lab_8
             var form = new AuditEditor();
             form.ShowDialog(this);
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var form = new NewClient();
+            form.ShowDialog(this);
+        }
     }
 }

@@ -15,29 +15,6 @@
             </ControlSetting>
           </ControlSettings>
         </ColumnUISetting>
-        <ColumnUISetting Name="ClientId">
-          <ControlSettings>
-            <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
-              <BindableControlInfo Name="ListBox" Type="System.Windows.Forms.ListBox" AssemblyName="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-            </ControlSetting>
-          </ControlSettings>
-        </ColumnUISetting>
-        <ColumnUISetting Name="RoomId">
-          <ControlSettings>
-            <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
-              <BindableControlInfo Name="ListBox" Type="System.Windows.Forms.ListBox" AssemblyName="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-            </ControlSetting>
-          </ControlSettings>
-        </ColumnUISetting>
-      </ColumnUISettings>
-    </TableUISetting>
-    <TableUISetting Name="Clients">
-      <ColumnUISettings>
-        <ColumnUISetting Name="LanguageId">
-          <ControlSettings><ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
-              <BindableControlInfo Name="ListBox" Type="System.Windows.Forms.ListBox" AssemblyName="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-            </ControlSetting></ControlSettings>
-        </ColumnUISetting>
       </ColumnUISettings>
     </TableUISetting>
   </TableUISettings>
