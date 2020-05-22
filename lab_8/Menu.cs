@@ -42,16 +42,31 @@ namespace lab_8
             form.ShowDialog(this);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void AuditEditorBt_Click(object sender, EventArgs e)
         {
             var form = new AuditEditor();
             form.ShowDialog(this);
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void AddAuditRecordBt_Click(object sender, EventArgs e)
         {
-            var form = new NewClient();
+            var form = new NewClientRegistration();
             form.ShowDialog(this);
+        }
+
+        private void AddAdminBt_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddClientBt_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddRoomBt_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
