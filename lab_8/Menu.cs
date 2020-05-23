@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
 using lab_8.Editors;
+using lab_8.NewCreator;
+using lab_8.Reports;
 using lab_8.Tables;
 
 namespace lab_8
@@ -56,17 +58,38 @@ namespace lab_8
 
         private void AddAdminBt_Click(object sender, EventArgs e)
         {
-
+            var form = new NewAdmin();
+            form.ShowDialog(this);
         }
 
         private void AddClientBt_Click(object sender, EventArgs e)
         {
-
+            var form = new NewClient();
+            form.ShowDialog(this);
         }
 
         private void AddRoomBt_Click(object sender, EventArgs e)
         {
+            var form = new NewRoom();
+            form.ShowDialog(this);
+        }
 
+        private void LastClientPrintBt_Click(object sender, EventArgs e)
+        {
+            var form = new LastRegistered();
+            form.ShowDialog(this);
+        }
+
+        private void ClientsInRoomsBt_Click(object sender, EventArgs e)
+        {
+            var form = new ClientRoomLang();
+            form.ShowDialog(this);
+        }
+
+        private void AuditLogPrintBt_Click(object sender, EventArgs e)
+        {
+            var form = new AuditReport();
+            form.ShowDialog(this);
         }
     }
 }

@@ -324,6 +324,76 @@ SELECT Id, Number, NumberOfBeds, CostOfNight FROM Rooms WHERE (Id = @Id)</Comman
             </Mappings>
             <Sources />
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ClientRoomLangTableAdapter" GeneratorDataComponentClassName="ClientRoomLangTableAdapter" Name="ClientRoomLang" UserDataComponentName="ClientRoomLangTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="HotelDBConnectionString (Settings)" DbObjectName="HotelDB.dbo.ClientRoomLang" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Name, Surname, Patronymic, Number, Lang FROM dbo.ClientRoomLang</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+              <Mapping SourceColumn="Surname" DataSetColumn="Surname" />
+              <Mapping SourceColumn="Patronymic" DataSetColumn="Patronymic" />
+              <Mapping SourceColumn="Number" DataSetColumn="Number" />
+              <Mapping SourceColumn="Lang" DataSetColumn="Lang" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="LastRegisteredClientTableAdapter" GeneratorDataComponentClassName="LastRegisteredClientTableAdapter" Name="LastRegisteredClient" UserDataComponentName="LastRegisteredClientTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="HotelDBConnectionString (Settings)" DbObjectName="HotelDB.dbo.LastRegisteredClient" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT PaymentAmount, PaymentTime, AdminSurname, AdminName, AdminPatronymic, ArrivalDate, DepartureDate, Number, NumberOfBeds, Lang, Name, Surname, Patronymic FROM dbo.LastRegisteredClient</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="PaymentAmount" DataSetColumn="PaymentAmount" />
+              <Mapping SourceColumn="PaymentTime" DataSetColumn="PaymentTime" />
+              <Mapping SourceColumn="AdminSurname" DataSetColumn="AdminSurname" />
+              <Mapping SourceColumn="AdminName" DataSetColumn="AdminName" />
+              <Mapping SourceColumn="AdminPatronymic" DataSetColumn="AdminPatronymic" />
+              <Mapping SourceColumn="ArrivalDate" DataSetColumn="ArrivalDate" />
+              <Mapping SourceColumn="DepartureDate" DataSetColumn="DepartureDate" />
+              <Mapping SourceColumn="Number" DataSetColumn="Number" />
+              <Mapping SourceColumn="NumberOfBeds" DataSetColumn="NumberOfBeds" />
+              <Mapping SourceColumn="Lang" DataSetColumn="Lang" />
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+              <Mapping SourceColumn="Surname" DataSetColumn="Surname" />
+              <Mapping SourceColumn="Patronymic" DataSetColumn="Patronymic" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="AuditReportTableAdapter" GeneratorDataComponentClassName="AuditReportTableAdapter" Name="AuditReport" UserDataComponentName="AuditReportTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="HotelDBConnectionString (Settings)" DbObjectName="HotelDB.dbo.AuditReport" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT PaymentAmount, PaymentTime, AdminSurname, ArrivalDate, DepartureDate, Number, ClientSurname FROM dbo.AuditReport</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="PaymentAmount" DataSetColumn="PaymentAmount" />
+              <Mapping SourceColumn="PaymentTime" DataSetColumn="PaymentTime" />
+              <Mapping SourceColumn="AdminSurname" DataSetColumn="AdminSurname" />
+              <Mapping SourceColumn="ArrivalDate" DataSetColumn="ArrivalDate" />
+              <Mapping SourceColumn="DepartureDate" DataSetColumn="DepartureDate" />
+              <Mapping SourceColumn="Number" DataSetColumn="Number" />
+              <Mapping SourceColumn="ClientSurname" DataSetColumn="ClientSurname" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
         </Tables>
         <Sources />
       </DataSource>
@@ -425,6 +495,127 @@ SELECT Id, Number, NumberOfBeds, CostOfNight FROM Rooms WHERE (Id = @Id)</Comman
               <xs:element name="Number" msprop:Generator_ColumnVarNameInTable="columnNumber" msprop:Generator_ColumnPropNameInRow="Number" msprop:Generator_ColumnPropNameInTable="NumberColumn" msprop:Generator_UserColumnName="Number" type="xs:int" />
               <xs:element name="NumberOfBeds" msprop:Generator_ColumnVarNameInTable="columnNumberOfBeds" msprop:Generator_ColumnPropNameInRow="NumberOfBeds" msprop:Generator_ColumnPropNameInTable="NumberOfBedsColumn" msprop:Generator_UserColumnName="NumberOfBeds" type="xs:int" />
               <xs:element name="CostOfNight" msprop:Generator_ColumnVarNameInTable="columnCostOfNight" msprop:Generator_ColumnPropNameInRow="CostOfNight" msprop:Generator_ColumnPropNameInTable="CostOfNightColumn" msprop:Generator_UserColumnName="CostOfNight" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ClientRoomLang" msprop:Generator_TableClassName="ClientRoomLangDataTable" msprop:Generator_TableVarName="tableClientRoomLang" msprop:Generator_RowChangedName="ClientRoomLangRowChanged" msprop:Generator_TablePropName="ClientRoomLang" msprop:Generator_RowDeletingName="ClientRoomLangRowDeleting" msprop:Generator_RowChangingName="ClientRoomLangRowChanging" msprop:Generator_RowEvHandlerName="ClientRoomLangRowChangeEventHandler" msprop:Generator_RowDeletedName="ClientRoomLangRowDeleted" msprop:Generator_RowClassName="ClientRoomLangRow" msprop:Generator_UserTableName="ClientRoomLang" msprop:Generator_RowEvArgName="ClientRoomLangRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Surname" msprop:Generator_ColumnVarNameInTable="columnSurname" msprop:Generator_ColumnPropNameInRow="Surname" msprop:Generator_ColumnPropNameInTable="SurnameColumn" msprop:Generator_UserColumnName="Surname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Patronymic" msprop:Generator_ColumnVarNameInTable="columnPatronymic" msprop:Generator_ColumnPropNameInRow="Patronymic" msprop:Generator_ColumnPropNameInTable="PatronymicColumn" msprop:Generator_UserColumnName="Patronymic" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Number" msprop:Generator_ColumnVarNameInTable="columnNumber" msprop:Generator_ColumnPropNameInRow="Number" msprop:Generator_ColumnPropNameInTable="NumberColumn" msprop:Generator_UserColumnName="Number" type="xs:int" minOccurs="0" />
+              <xs:element name="Lang" msprop:Generator_ColumnVarNameInTable="columnLang" msprop:Generator_ColumnPropNameInRow="Lang" msprop:Generator_ColumnPropNameInTable="LangColumn" msprop:Generator_UserColumnName="Lang" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LastRegisteredClient" msprop:Generator_TableClassName="LastRegisteredClientDataTable" msprop:Generator_TableVarName="tableLastRegisteredClient" msprop:Generator_RowChangedName="LastRegisteredClientRowChanged" msprop:Generator_TablePropName="LastRegisteredClient" msprop:Generator_RowDeletingName="LastRegisteredClientRowDeleting" msprop:Generator_RowChangingName="LastRegisteredClientRowChanging" msprop:Generator_RowEvHandlerName="LastRegisteredClientRowChangeEventHandler" msprop:Generator_RowDeletedName="LastRegisteredClientRowDeleted" msprop:Generator_RowClassName="LastRegisteredClientRow" msprop:Generator_UserTableName="LastRegisteredClient" msprop:Generator_RowEvArgName="LastRegisteredClientRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PaymentAmount" msprop:Generator_ColumnVarNameInTable="columnPaymentAmount" msprop:Generator_ColumnPropNameInRow="PaymentAmount" msprop:Generator_ColumnPropNameInTable="PaymentAmountColumn" msprop:Generator_UserColumnName="PaymentAmount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PaymentTime" msprop:Generator_ColumnVarNameInTable="columnPaymentTime" msprop:Generator_ColumnPropNameInRow="PaymentTime" msprop:Generator_ColumnPropNameInTable="PaymentTimeColumn" msprop:Generator_UserColumnName="PaymentTime" type="xs:dateTime" />
+              <xs:element name="AdminSurname" msprop:Generator_ColumnVarNameInTable="columnAdminSurname" msprop:Generator_ColumnPropNameInRow="AdminSurname" msprop:Generator_ColumnPropNameInTable="AdminSurnameColumn" msprop:Generator_UserColumnName="AdminSurname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AdminName" msprop:Generator_ColumnVarNameInTable="columnAdminName" msprop:Generator_ColumnPropNameInRow="AdminName" msprop:Generator_ColumnPropNameInTable="AdminNameColumn" msprop:Generator_UserColumnName="AdminName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AdminPatronymic" msprop:Generator_ColumnVarNameInTable="columnAdminPatronymic" msprop:Generator_ColumnPropNameInRow="AdminPatronymic" msprop:Generator_ColumnPropNameInTable="AdminPatronymicColumn" msprop:Generator_UserColumnName="AdminPatronymic" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ArrivalDate" msprop:Generator_ColumnVarNameInTable="columnArrivalDate" msprop:Generator_ColumnPropNameInRow="ArrivalDate" msprop:Generator_ColumnPropNameInTable="ArrivalDateColumn" msprop:Generator_UserColumnName="ArrivalDate" type="xs:dateTime" />
+              <xs:element name="DepartureDate" msprop:Generator_ColumnVarNameInTable="columnDepartureDate" msprop:Generator_ColumnPropNameInRow="DepartureDate" msprop:Generator_ColumnPropNameInTable="DepartureDateColumn" msprop:Generator_UserColumnName="DepartureDate" type="xs:dateTime" />
+              <xs:element name="Number" msprop:Generator_ColumnVarNameInTable="columnNumber" msprop:Generator_ColumnPropNameInRow="Number" msprop:Generator_ColumnPropNameInTable="NumberColumn" msprop:Generator_UserColumnName="Number" type="xs:int" minOccurs="0" />
+              <xs:element name="NumberOfBeds" msprop:Generator_ColumnVarNameInTable="columnNumberOfBeds" msprop:Generator_ColumnPropNameInRow="NumberOfBeds" msprop:Generator_ColumnPropNameInTable="NumberOfBedsColumn" msprop:Generator_UserColumnName="NumberOfBeds" type="xs:int" minOccurs="0" />
+              <xs:element name="Lang" msprop:Generator_ColumnVarNameInTable="columnLang" msprop:Generator_ColumnPropNameInRow="Lang" msprop:Generator_ColumnPropNameInTable="LangColumn" msprop:Generator_UserColumnName="Lang" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Surname" msprop:Generator_ColumnVarNameInTable="columnSurname" msprop:Generator_ColumnPropNameInRow="Surname" msprop:Generator_ColumnPropNameInTable="SurnameColumn" msprop:Generator_UserColumnName="Surname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Patronymic" msprop:Generator_ColumnVarNameInTable="columnPatronymic" msprop:Generator_ColumnPropNameInRow="Patronymic" msprop:Generator_ColumnPropNameInTable="PatronymicColumn" msprop:Generator_UserColumnName="Patronymic" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AuditReport" msprop:Generator_TableClassName="AuditReportDataTable" msprop:Generator_TableVarName="tableAuditReport" msprop:Generator_TablePropName="AuditReport" msprop:Generator_RowDeletingName="AuditReportRowDeleting" msprop:Generator_RowChangingName="AuditReportRowChanging" msprop:Generator_RowEvHandlerName="AuditReportRowChangeEventHandler" msprop:Generator_RowDeletedName="AuditReportRowDeleted" msprop:Generator_UserTableName="AuditReport" msprop:Generator_RowChangedName="AuditReportRowChanged" msprop:Generator_RowEvArgName="AuditReportRowChangeEvent" msprop:Generator_RowClassName="AuditReportRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PaymentAmount" msprop:Generator_ColumnVarNameInTable="columnPaymentAmount" msprop:Generator_ColumnPropNameInRow="PaymentAmount" msprop:Generator_ColumnPropNameInTable="PaymentAmountColumn" msprop:Generator_UserColumnName="PaymentAmount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PaymentTime" msprop:Generator_ColumnVarNameInTable="columnPaymentTime" msprop:Generator_ColumnPropNameInRow="PaymentTime" msprop:Generator_ColumnPropNameInTable="PaymentTimeColumn" msprop:Generator_UserColumnName="PaymentTime" type="xs:dateTime" />
+              <xs:element name="AdminSurname" msprop:Generator_ColumnVarNameInTable="columnAdminSurname" msprop:Generator_ColumnPropNameInRow="AdminSurname" msprop:Generator_ColumnPropNameInTable="AdminSurnameColumn" msprop:Generator_UserColumnName="AdminSurname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ArrivalDate" msprop:Generator_ColumnVarNameInTable="columnArrivalDate" msprop:Generator_ColumnPropNameInRow="ArrivalDate" msprop:Generator_ColumnPropNameInTable="ArrivalDateColumn" msprop:Generator_UserColumnName="ArrivalDate" type="xs:dateTime" />
+              <xs:element name="DepartureDate" msprop:Generator_ColumnVarNameInTable="columnDepartureDate" msprop:Generator_ColumnPropNameInRow="DepartureDate" msprop:Generator_ColumnPropNameInTable="DepartureDateColumn" msprop:Generator_UserColumnName="DepartureDate" type="xs:dateTime" />
+              <xs:element name="Number" msprop:Generator_ColumnVarNameInTable="columnNumber" msprop:Generator_ColumnPropNameInRow="Number" msprop:Generator_ColumnPropNameInTable="NumberColumn" msprop:Generator_UserColumnName="Number" type="xs:int" minOccurs="0" />
+              <xs:element name="ClientSurname" msprop:Generator_ColumnVarNameInTable="columnClientSurname" msprop:Generator_ColumnPropNameInRow="ClientSurname" msprop:Generator_ColumnPropNameInTable="ClientSurnameColumn" msprop:Generator_UserColumnName="ClientSurname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
