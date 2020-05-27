@@ -32,5 +32,17 @@ namespace lab_8.Properties {
                 return ((string)(this["HotelDBConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int InfoId {
+            get {
+                return ((int)(this["InfoId"]));
+            }
+            set {
+                this["InfoId"] = value;
+            }
+        }
     }
 }

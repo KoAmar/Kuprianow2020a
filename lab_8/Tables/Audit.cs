@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using lab_8.Editors;
+using lab_8.Reports;
 
 namespace lab_8.Tables
 {
@@ -20,13 +21,9 @@ namespace lab_8.Tables
 
         private void Audit_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'hotelDBDataSet.Rooms' table. You can move, or remove it, as needed.
             roomsTableAdapter.Fill(hotelDBDataSet.Rooms);
-            // TODO: This line of code loads data into the 'hotelDBDataSet.Clients' table. You can move, or remove it, as needed.
             clientsTableAdapter.Fill(hotelDBDataSet.Clients);
-            // TODO: This line of code loads data into the 'hotelDBDataSet.Administrators' table. You can move, or remove it, as needed.
             administratorsTableAdapter.Fill(hotelDBDataSet.Administrators);
-            // TODO: This line of code loads data into the 'hotelDBDataSet.AuditLog' table. You can move, or remove it, as needed.
             auditLogTableAdapter.Fill(hotelDBDataSet.AuditLog);
         }
 
@@ -56,7 +53,15 @@ namespace lab_8.Tables
 
         private void toolStripButton4_Click(object sender, EventArgs e)
         {
+            var id = auditLogDataGridView.CurrentCell.RowIndex;
+            
+            Properties.Settings.Default.InfoId = (int)auditLogDataGridView.Rows[id].Cells[0].Value;
+            Properties.Settings.Default.Save();  
 
+            //MessageBox.Show(Properties.Settings.Default.InfoId.ToString());
+
+            var form = new TransactionInformationReport();
+            form.ShowDialog();
         }
     }
 }
