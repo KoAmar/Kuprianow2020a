@@ -53,5 +53,10 @@ namespace lab_8.Tables
             roomsTableAdapter.Fill(hotelDBDataSet.Rooms);
             Refresh();
         }
+
+        private void toolStripButton4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
