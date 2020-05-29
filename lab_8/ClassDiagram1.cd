@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="lab_8.Editors.AdminsEditor" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAIlAgCAABAMAJACEIAASAAAQAAAAAAAAACUDAAI=</HashCode>
+      <FileName>Editors\AdminsEditor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab_8.Editors.AuditEditor" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAJBAgCAEFAMAskGMaFgSAAAQAkAAAAAAAARBBBA=</HashCode>
+      <FileName>Editors\AuditEditor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab_8.Editors.ClientsEditor" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgEQAIBAgCAABAMAMACUKAASAAAAAECAABAgACVDAAA=</HashCode>
+      <FileName>Editors\ClientsEditor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab_8.Editors.LanguageEditor" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgBQAIhAgCAABAMAICCEKAASAAAAAAEAAAAAACQBAAA=</HashCode>
+      <FileName>Editors\LanguageEditor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab_8.Editors.RoomsEditor" Collapsed="true">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAQBIBAgCAABCMApBCEIAASAAAAAAAAAAAAAARBABA=</HashCode>
+      <FileName>Editors\RoomsEditor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab_8.HotelDBDataSet" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gEAgAEBASwIACANgBigAQIASCAkGwBoQAIlAAAEhBBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab_8.Menu" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>KAAAAAAQ2CAACBgAAAWIRAACUAAIGA0AgMAAAAICASA=</HashCode>
+      <FileName>Menu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab_8.NewClientRegistration" Collapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAACAAEBASEACAAAACAAAYAEAIAEAAAARABBA=</HashCode>
+      <FileName>NewCreator\NewClientRegistration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab_8.Program" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab_8.HotelDBDataSetTableAdapters.AdministratorsTableAdapter" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab_8.HotelDBDataSetTableAdapters.AuditLogTableAdapter" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab_8.HotelDBDataSetTableAdapters.ClientsTableAdapter" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab_8.HotelDBDataSetTableAdapters.LanguagesTableAdapter" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab_8.HotelDBDataSetTableAdapters.RoomsTableAdapter" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab_8.HotelDBDataSetTableAdapters.ClientRoomLangTableAdapter" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab_8.HotelDBDataSetTableAdapters.LastRegisteredClientTableAdapter" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab_8.HotelDBDataSetTableAdapters.AuditReportTableAdapter" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAGAAEAAACAcAIAAAAAAAACAICAAAAAAAAAAARBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab_8.HotelDBDataSetTableAdapters.MegaAuditTableAdapter" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAGAAEAAACAcAIAAAAAAAACAICAAAAAAAAAAARBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab_8.HotelDBDataSetTableAdapters.TableAdapterManager" Collapsed="true">
+    <Position X="4" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAQACAAAEBAFAEBIBAAMAAgAAACgAAAAAQAEAAABJQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab_8.NewCreator.NewAdmin" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAACAAAAAAAACAAAACAAAYAAAAAEAAECUCAAA=</HashCode>
+      <FileName>NewCreator\NewAdmin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab_8.NewCreator.NewClient" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAABAACAAAAAQEACQCAACAAAIAEAIAEAAACUCAAA=</HashCode>
+      <FileName>NewCreator\NewClient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab_8.NewCreator.NewLang" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAABAACAAAAAAAACACAACAAAIAAAAAEQAACQAAAA=</HashCode>
+      <FileName>NewCreator\NewLang.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab_8.NewCreator.NewRoom" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAACAAACAABACBAAACAAAIAAAAAEAAAARAABA=</HashCode>
+      <FileName>NewCreator\NewRoom.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab_8.Properties.Resources" Collapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab_8.Properties.Settings" Collapsed="true">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAIAAAAAQBAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab_8.Reports.AuditReport" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAKAEABASAACAAAACAAAYAAAgAEAAAAQAACA=</HashCode>
+      <FileName>Reports\AuditReport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab_8.Reports.ClientRoomLang" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAABAACAEAAAAAACAAAACAAAABAAAAAAAAAAAABA=</HashCode>
+      <FileName>Reports\ClientRoomLang.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab_8.Reports.LastRegistered" Collapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAABAACAEAAAAACCAAAAKAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Reports\LastRegistered.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab_8.Reports.TransactionInformationReport" Collapsed="true">
+    <Position X="5.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABCACIEAAAAACCAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Reports\TransactionInformationReport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SqlServerTypes.Utilities" Collapsed="true">
+    <Position X="7.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAQAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>SqlServerTypes\Loader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab_8.Tables.Admins" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAIlAgDAIBAOAIACEIAAWAAAQAAAAAAAAAASBAAY=</HashCode>
+      <FileName>Tables\Admins.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab_8.Tables.Audit" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAQAoBAgDAIFAOBsAWMIFoSAAAQAEAAAAAAAARBBBQ=</HashCode>
+      <FileName>Tables\Audit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab_8.Tables.Clients" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AiEQAIBAgDAIBAORMACEKEASAAAAAECAAAAAAAZBAAQ=</HashCode>
+      <FileName>Tables\Clients.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab_8.Tables.Language" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAQAIhAgDAABAOAICCEKAASAAAAACEAAAAAAAQBAAE=</HashCode>
+      <FileName>Tables\Language.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lab_8.Tables.Rooms" Collapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAQAIBAgDAIJAOAoBCEIAASAAAAAAAAAAAAAAVBABQ=</HashCode>
+      <FileName>Tables\Rooms.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

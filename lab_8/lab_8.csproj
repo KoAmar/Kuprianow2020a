@@ -138,6 +138,12 @@
     <Compile Include="NewCreator\NewClientRegistration.Designer.cs">
       <DependentUpon>NewClientRegistration.cs</DependentUpon>
     </Compile>
+    <Compile Include="NewCreator\NewLang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewCreator\NewLang.Designer.cs">
+      <DependentUpon>NewLang.cs</DependentUpon>
+    </Compile>
     <Compile Include="NewCreator\NewRoom.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -227,6 +233,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NewCreator\NewClientRegistration.resx">
       <DependentUpon>NewClientRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewCreator\NewLang.resx">
+      <DependentUpon>NewLang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewCreator\NewRoom.resx">
       <DependentUpon>NewRoom.cs</DependentUpon>

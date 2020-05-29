@@ -91,5 +91,12 @@ namespace lab_8
             var form = new AuditReport();
             form.ShowDialog(this);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var form = new NewLang();
+            form.ShowDialog(this);
+
+        }
     }
 }
