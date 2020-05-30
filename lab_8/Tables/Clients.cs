@@ -1,6 +1,6 @@
-﻿using System;
+﻿using lab_8.Editors;
+using System;
 using System.Windows.Forms;
-using lab_8.Editors;
 
 namespace lab_8.Tables
 {

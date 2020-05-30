@@ -1,7 +1,8 @@
-﻿using System;
-using System.Windows.Forms;
-using lab_8.Editors;
+﻿using lab_8.Editors;
 using lab_8.Reports;
+using System;
+using System.Windows.Forms;
+using lab_8.NewCreator;
 
 namespace lab_8.Tables
 {
@@ -54,14 +55,22 @@ namespace lab_8.Tables
         private void toolStripButton4_Click(object sender, EventArgs e)
         {
             var id = auditLogDataGridView.CurrentCell.RowIndex;
-            
+
             Properties.Settings.Default.InfoId = (int)auditLogDataGridView.Rows[id].Cells[0].Value;
-            Properties.Settings.Default.Save();  
+            Properties.Settings.Default.Save();
 
             //MessageBox.Show(Properties.Settings.Default.InfoId.ToString());
 
             var form = new TransactionInformationReport();
             form.ShowDialog();
+        }
+
+        private void toolStripButton5_Click(object sender, EventArgs e)
+        {
+            var form = new NewAdmin();
+            form.ShowDialog(this);
+            administratorsTableAdapter.Fill(hotelDBDataSet.Administrators);
+            //Refresh();
         }
     }
 }

@@ -32,7 +32,6 @@ namespace lab_8.Reports
             var date2 = dateTimePicker2.Value;
 
             //MessageBox.Show($@"{date1.Year}-{date1.Month}-{date1.Day}");
-
             auditReportTableAdapter.FillBy(hotelDBDataSet.AuditReport,
                     comboBox1.Text,
                     $@"{date1.Year}-{date1.Month}-{date1.Day}",

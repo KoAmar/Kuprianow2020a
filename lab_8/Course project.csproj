@@ -109,6 +109,9 @@
     <Compile Include="Editors\RoomsEditor.Designer.cs">
       <DependentUpon>RoomsEditor.cs</DependentUpon>
     </Compile>
+    <Compile Include="HotelDBDataSet.cs">
+      <DependentUpon>HotelDBDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="HotelDBDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -281,6 +284,7 @@
       <DependentUpon>Rooms.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
+    <None Include="ClassDiagram2.cd" />
     <None Include="HotelDBDataSet.xsc">
       <DependentUpon>HotelDBDataSet.xsd</DependentUpon>
     </None>

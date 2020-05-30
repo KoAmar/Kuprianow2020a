@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Data;
-using System.Data.SqlClient;
-using System.Linq;
 using System.Windows.Forms;
 
 namespace lab_8
@@ -32,8 +30,8 @@ namespace lab_8
             //    Console.WriteLine($@"{row.Id} {row.AdministratorId}");
             //}
             //dataGridView1.DataSource = hotelDBDataSet.AuditLog;
-            
-            
+
+
 
             dateTimePicker1.Value = DateTime.Today;
             dateTimePicker2.Value = DateTime.Today.AddDays(10);
@@ -45,7 +43,7 @@ namespace lab_8
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
             DataTable dt = hotelDBDataSet.AuditLog;
             var newRow = dt.NewRow();
 

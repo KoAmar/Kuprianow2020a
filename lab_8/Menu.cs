@@ -1,9 +1,9 @@
-﻿using System;
-using System.Windows.Forms;
-using lab_8.Editors;
+﻿using lab_8.Editors;
 using lab_8.NewCreator;
 using lab_8.Reports;
 using lab_8.Tables;
+using System;
+using System.Windows.Forms;
 
 namespace lab_8
 {
